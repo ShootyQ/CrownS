@@ -32,17 +32,35 @@
       <main id="top">
         <section class="cover-intro" aria-labelledby="intro-title">
           <div class="cover-intro__media">
-            <img src="assets/backgroundpic.jpg" alt="Exterior of a residential home" width="1600" height="1067">
+            <img src="assets/alternateanglefocus.png" alt="Exterior of a residential home" width="1664" height="936">
             <div class="cover-intro__veil"></div>
           </div>
           <div class="cover-intro__copy">
-            <p class="eyebrow">Hidden Problem House</p>
-            <h1 id="intro-title">What the house shows is not always what it says.</h1>
-            <p>A clean showing can still hide drainage trouble, roof wear, structural movement, and aging systems. Crown S turns the inspection into a guided reveal so buyers know what they are really stepping into.</p>
-            <div class="cover-intro__actions">
-              <a class="primary-link" href="#inspection-sequence">Begin Inspection</a>
-              <a class="secondary-link" href="#final-summary">See Final Summary</a>
+            <div class="intro-sheet">
+              <p class="eyebrow">Hidden Problem House</p>
+              <p class="intro-meta">Field Log / Buyer Readiness / Greater Oklahoma City</p>
+              <h1 id="intro-title">A clean showing can hide an expensive story.</h1>
+              <p>Crown S treats the inspection like a reveal, not a sales pitch. The goal is simple: show buyers what the property is saying before repair costs, drainage issues, roof wear, or system age get the final word.</p>
+              <div class="cover-intro__actions">
+                <a class="primary-link" href="#inspection-sequence">Begin Inspection</a>
+                <a class="secondary-link" href="#final-summary">See Final Summary</a>
+              </div>
             </div>
+            <aside class="intro-aside" aria-label="Inspection opening note">
+              <p class="eyebrow">Observed First</p>
+              <div class="intro-aside__row">
+                <span>Exterior envelope</span>
+                <strong>Roofline, grade, openings</strong>
+              </div>
+              <div class="intro-aside__row">
+                <span>Client goal</span>
+                <strong>Understand risk before closing</strong>
+              </div>
+              <div class="intro-aside__row">
+                <span>Inspector</span>
+                <strong>Rex Shepherd</strong>
+              </div>
+            </aside>
           </div>
         </section>
 
@@ -56,7 +74,7 @@
             <aside class="inspection-stage" aria-label="Interactive inspection stage">
               <div class="stage-card" data-active-layer="exterior">
                 <div class="stage-screen">
-                  <img class="stage-screen__image" src="assets/backgroundpic.jpg" alt="Exterior home view used for the inspection stage" width="1600" height="1067">
+                  <img class="stage-screen__image" src="assets/alternateanglefocus.png" alt="Exterior home view used for the inspection stage" width="1664" height="936">
                   <div class="stage-screen__scan"></div>
                   <div class="stage-screen__grid"></div>
                   <div class="stage-screen__layer stage-screen__layer--exterior" aria-hidden="true">
@@ -149,6 +167,12 @@
                   <li>Openings and trim are checked for signs of failed sealants and weather entry.</li>
                   <li>Site slope and surface runoff are read before interior staining ever becomes visible.</li>
                 </ul>
+                <div class="inspection-step__evidence">
+                  <figure class="evidence-tile evidence-tile--wide">
+                    <img src="assets/alternateanglefocus.png" alt="Alternate exterior angle of the inspected home" width="1664" height="936">
+                    <figcaption>Exterior reference / siding, roofline, openings, and grade visible in one pass.</figcaption>
+                  </figure>
+                </div>
               </article>
 
               <article class="inspection-step" id="step-moisture" data-layer="moisture" data-layer-name="Moisture" data-title="Moisture Paths" data-copy="Water rarely arrives as a surprise. The site usually shows where it wants to travel long before the damage appears inside." data-summary="Watch drainage" data-summary-key="moisture">
@@ -160,6 +184,12 @@
                   <li>Moisture usually leaves subtle exterior evidence before it becomes expensive interior repair.</li>
                   <li>Exterior grading and water control shape long-term foundation and crawlspace behavior.</li>
                 </ul>
+                <div class="inspection-step__evidence">
+                  <figure class="evidence-tile evidence-tile--wide">
+                    <img src="assets/drainagefocus.png" alt="Downspout discharging near the foundation with visible wet soil" width="1664" height="936">
+                    <figcaption>Moisture evidence / discharge location and wet soil show why drainage gets reviewed early.</figcaption>
+                  </figure>
+                </div>
               </article>
 
               <article class="inspection-step" id="step-roof" data-layer="roof" data-layer-name="Roof" data-title="Roof and Attic Clues" data-copy="The upper envelope tells you how the home handles time, heat, and weather. Small roof details often create bigger downstream cost." data-summary="Investigate age" data-summary-key="roof">
@@ -171,6 +201,16 @@
                   <li>Surface wear can suggest remaining life, deferred maintenance, or recent patchwork.</li>
                   <li>Roof and attic conditions have ripple effects on insulation, moisture, and comfort.</li>
                 </ul>
+                <div class="inspection-step__evidence inspection-step__evidence--split">
+                  <figure class="evidence-tile">
+                    <img src="assets/rooffocus.png" alt="Roof detail showing shingles, flashing, and roof penetration" width="1664" height="936">
+                    <figcaption>Roof evidence / flashing, shingle condition, and penetrations tell the truth fast.</figcaption>
+                  </figure>
+                  <figure class="evidence-tile">
+                    <img src="assets/atticfocus.png" alt="Attic framing and insulation view" width="1664" height="936">
+                    <figcaption>Attic evidence / ventilation and roof structure clues continue the story inside.</figcaption>
+                  </figure>
+                </div>
               </article>
 
               <article class="inspection-step" id="step-structure" data-layer="structure" data-layer-name="Structure" data-title="Structure and Movement" data-copy="The goal is not drama. The goal is separating normal aging from movement that changes decisions, pricing, or repair planning." data-summary="Monitor movement" data-summary-key="structure">
@@ -182,6 +222,12 @@
                   <li>Openings, trim lines, and slab behavior often help tell the larger structural story.</li>
                   <li>Clients need calm interpretation, not dramatic wording.</li>
                 </ul>
+                <div class="inspection-step__evidence">
+                  <figure class="evidence-tile evidence-tile--wide">
+                    <img src="assets/crackfocus.png" alt="Interior crack running from above a door frame" width="1664" height="936">
+                    <figcaption>Structure evidence / one crack is only part of the story, but pattern and placement matter.</figcaption>
+                  </figure>
+                </div>
               </article>
 
               <article class="inspection-step" id="step-systems" data-layer="systems" data-layer-name="Systems" data-title="Systems and Performance" data-copy="Mechanical systems, visible electrical conditions, and service clues shape ownership cost after the showing is over." data-summary="Service review" data-summary-key="systems">
@@ -193,6 +239,12 @@
                   <li>Electrical and plumbing clues often point to upgrade needs or deferred service.</li>
                   <li>Function matters as much as appearance once you own the property.</li>
                 </ul>
+                <div class="inspection-step__evidence">
+                  <figure class="evidence-tile evidence-tile--wide">
+                    <img src="assets/electrical.waterheaterfocus.png" alt="Electrical panel and water heater in utility space" width="1664" height="936">
+                    <figcaption>Systems evidence / panel layout, service equipment, and water heater condition shape real ownership cost.</figcaption>
+                  </figure>
+                </div>
               </article>
             </div>
           </div>
