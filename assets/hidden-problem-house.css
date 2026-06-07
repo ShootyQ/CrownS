@@ -555,6 +555,12 @@ h3 {
   margin-bottom: 0.55rem;
 }
 
+.stage-panel__note {
+  margin: 0;
+  color: rgba(245, 242, 236, 0.58);
+  font-size: 0.92rem;
+}
+
 .layer-controls {
   display: flex;
   flex-wrap: wrap;
@@ -855,6 +861,23 @@ h3 {
     padding-left: 0.75rem;
   }
 
+  .brand-lockup {
+    gap: 0.55rem;
+  }
+
+  .brand-lockup img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-lockup strong {
+    font-size: 0.75rem;
+  }
+
+  .brand-lockup em {
+    font-size: 0.62rem;
+  }
+
   .quick-nav {
     display: none;
   }
@@ -886,6 +909,15 @@ h3 {
     border-radius: 20px;
   }
 
+  .cover-intro__copy,
+  .stage-card,
+  .stage-panel,
+  .inspection-step,
+  .rex-note__copy,
+  .final-summary {
+    padding: 1rem;
+  }
+
   .primary-link,
   .secondary-link,
   .progress-stop,
@@ -895,7 +927,50 @@ h3 {
   }
 
   .stage-screen {
-    min-height: 380px;
+    min-height: 320px;
+    height: min(62svh, 420px);
+    border-radius: 18px;
+  }
+
+  .marker,
+  .node {
+    gap: 0.35rem;
+    padding: 0.32rem 0.5rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.06em;
+  }
+
+  .marker::before,
+  .node::before {
+    width: 6px;
+    height: 6px;
+  }
+
+  .stage-panel__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .layer-controls {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .layer-button {
+    width: 100%;
+    min-height: 42px;
+    padding: 0 0.7rem;
+    font-size: 0.66rem;
+  }
+
+  .progress-stop {
+    text-align: center;
+  }
+
+  .stage-panel__note {
+    font-size: 0.84rem;
+    line-height: 1.6;
   }
 
   .rex-note__card {
@@ -909,5 +984,53 @@ h3 {
 
   .report-item strong {
     text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .experience-header {
+    gap: 0.6rem;
+    padding-right: 0.45rem;
+  }
+
+  .call-button {
+    padding: 0 0.85rem;
+    font-size: 0.72rem;
+  }
+
+  .cover-intro {
+    min-height: 0;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 13vw, 3.4rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  h3 {
+    font-size: clamp(1.45rem, 7.2vw, 1.9rem);
+  }
+
+  .stage-screen {
+    min-height: 280px;
+    height: min(54svh, 340px);
+  }
+
+  .marker,
+  .node {
+    max-width: 38vw;
+    white-space: normal;
+    line-height: 1.2;
+  }
+
+  .layer-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .progress-rail {
+    gap: 0.45rem;
   }
 }
