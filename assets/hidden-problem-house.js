@@ -5,6 +5,12 @@ const stageCopy = document.getElementById('stage-copy');
 const activeLayerChip = document.getElementById('active-layer-chip');
 const layerButtons = Array.from(document.querySelectorAll('[data-layer-target]'));
 const progressStops = Array.from(document.querySelectorAll('[data-progress-target]'));
+const earHotspot = document.querySelector('[data-ear-hotspot]');
+const earBubble = document.querySelector('[data-ear-bubble]');
+const earPortrait = earBubble?.closest('.rex-note__portrait');
+
+let earRubCount = 0;
+let earBubbleTimer;
 
 const setActiveStep = (step) => {
   if (!step || !stageCard) {
@@ -83,4 +89,34 @@ layerButtons.forEach((button) => {
 
 if (stepElements.length > 0) {
   setActiveStep(stepElements[0]);
+}
+
+const showEarBubble = () => {
+  if (!earBubble || !earPortrait) {
+    return;
+  }
+
+  earPortrait.classList.add('is-bubble-visible');
+  earBubble.setAttribute('aria-hidden', 'false');
+
+  window.clearTimeout(earBubbleTimer);
+  earBubbleTimer = window.setTimeout(() => {
+    earPortrait.classList.remove('is-bubble-visible');
+    earBubble.setAttribute('aria-hidden', 'true');
+  }, 2800);
+};
+
+const registerEarRub = () => {
+  earRubCount += 1;
+
+  if (earRubCount >= 3) {
+    showEarBubble();
+    earRubCount = 0;
+  }
+};
+
+if (earHotspot) {
+  earHotspot.addEventListener('mouseenter', registerEarRub);
+  earHotspot.addEventListener('click', registerEarRub);
+  earHotspot.addEventListener('focus', registerEarRub);
 }
