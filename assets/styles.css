@@ -379,13 +379,21 @@ h3 {
 
 .process-section {
   display: grid;
-  grid-template-columns: minmax(260px, 420px) minmax(0, 1fr);
-  gap: clamp(2rem, 6vw, 4.5rem);
+  grid-template-columns: minmax(300px, 440px) minmax(0, 1fr);
+  gap: clamp(3rem, 7vw, 5.5rem);
+  align-items: start;
 }
 
 .section-heading.compact {
   display: block;
   margin-bottom: 0;
+}
+
+.process-section h2 {
+  max-width: 430px;
+  font-size: clamp(2.6rem, 4.4vw, 4.15rem);
+  line-height: 1.03;
+  overflow-wrap: anywhere;
 }
 
 .process-list {
